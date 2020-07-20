@@ -1,0 +1,19 @@
+{
+  "name": "clock-project",
+  "version": "0.0.0",
+  "description": "Clock project",
+  "main": "index.js",
+  "scripts": {
+    "start:arduino": "node src/exp-arduino/index.js",
+    "start:tessel": "t2 provision && t2 run src/exp-tessel/index.js"
+  },
+  "keywords": [
+    "Arduino"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "johnny-five": "^2.0.0",
+    "moment": "^2.27.0",
+    "tessel-io": "^1.3.0"
+  }
+}
