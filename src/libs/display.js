@@ -24,12 +24,9 @@ const NUMBER_PATTERNS = [
 ];
 
 module.exports = class Display {
-  constructor(DisplayAdapter) {
-    this.adapter = new DisplayAdapter();
-
-    this.getDiff = this.getDiff.bind(this);
+  constructor(adapter) {
+    this.adapter = adapter;
     this.getPattern = this.getPattern.bind(this);
-    this.render = this.render.bind(this);
   }
 
   getDiff(enabled) {

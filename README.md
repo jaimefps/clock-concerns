@@ -44,7 +44,7 @@ Executions may break of if you change Node.js version after installing dependenc
 
 #### IMPORTANT
 
-You may see a long list of WARN and ERR logs when the `Building` stage begins. Wait about a minute before killing the process. Many of this errors can be ignored. There seem to be missing some unused dependencies regarding `@serialport/bindings`.
+You may see a long list of WARN and ERR logs when the `Building` stage begins. Wait about a minute before killing the process. Many of these errors can be ignored. There seem to be missing some unused dependencies regarding `@serialport/bindings`.
 
 ![alt text](assets/readme/ignore-error-log.png)
 

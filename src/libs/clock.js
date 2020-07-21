@@ -1,9 +1,8 @@
 const moment = require("moment");
-const Display = require("./display");
 
 module.exports = class Clock {
-  constructor(DisplayAdapter) {
-    this.display = new Display(DisplayAdapter);
+  constructor(display) {
+    this.display = display;
   }
 
   init() {

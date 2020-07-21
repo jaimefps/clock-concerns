@@ -6,18 +6,18 @@ export default class WebAdapter extends AbstractAdapter {
     return ["one", "two", "three", "four", "five", "six"][column];
   }
 
-  enable(node, column) {
-    transition(
-      document.querySelector(`#${this.getColId(column)} .${node}`),
-      { backgroundColor: "white" },
-      { timingFunction: "linear", duration: 1000 }
-    );
-  }
-
   disable(node, column) {
     transition(
       document.querySelector(`#${this.getColId(column)} .${node}`),
       { backgroundColor: "black" },
+      { timingFunction: "linear", duration: 1000 }
+    );
+  }
+
+  enable(node, column) {
+    transition(
+      document.querySelector(`#${this.getColId(column)} .${node}`),
+      { backgroundColor: "white" },
       { timingFunction: "linear", duration: 1000 }
     );
   }
