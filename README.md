@@ -33,7 +33,7 @@ Executions may break of if you change Node.js version after installing dependenc
 1. Install dependencies: `npm install`
 2. Open Arduino Editor on your machine.
 3. Go to `File` > `Examples` > `Firmata` > `StandardFirmataPlus`
-4. Upload `StandardFirmata` code into the Arduino.
+4. Upload `StandardFirmataPlus` code into the Arduino.
 5. Run arduino clock with: `npm run start:arduino`
 
 ## Setup Tessel2 Clock
