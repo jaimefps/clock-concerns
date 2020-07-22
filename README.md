@@ -28,19 +28,27 @@ Executions may break of if you change Node.js version after installing dependenc
 1. Install dependencies: `npm install`
 2. Run web clock with: `npm run start:web`
 
-## Setup Arduino Clock
+## Setup Arduino Led Clock
 
 1. Install dependencies: `npm install`
 2. Open Arduino Editor on your machine.
 3. Go to `File` > `Examples` > `Firmata` > `StandardFirmataPlus`
 4. Upload `StandardFirmataPlus` code into the Arduino.
-5. Run arduino clock with: `npm run start:arduino`
+5. Run arduino clock with: `npm run start:arduino:led`
 
-## Setup Tessel2 Clock
+## Setup Arduino Servo Clock
+
+1. Install dependencies: `npm install`
+2. Open Arduino Editor on your machine.
+3. Go to `File` > `Examples` > `Firmata` > `StandardFirmataPlus`
+4. Upload `StandardFirmataPlus` code into the Arduino.
+5. Run arduino clock with: `npm run start:arduino:servo`
+
+## Setup Tessel2 Servo Clock
 
 1. Install dependencies: `npm install`
 2. Install t2 CLI: `npm install -g t2-cli`
-3. Run tessel clock with: `npm run start:tessel`
+3. Run tessel clock with: `npm run start:tessel:servo`
 
 #### IMPORTANT
 
