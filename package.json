@@ -4,8 +4,9 @@
   "description": "musings about separation of concerns...",
   "license": "MIT",
   "scripts": {
-    "start:arduino": "node src/clock-arduino/index.js",
-    "start:tessel": "t2 provision && t2 run src/clock-tessel/index.js",
+    "start:arduino:led": "node src/clock-arduino/led.js",
+    "start:arduino:servo": "node src/clock-arduino/servo.js",
+    "start:tessel:servo": "t2 provision && t2 run src/clock-tessel/servo.js",
     "start:web": "webpack-dev-server"
   },
   "dependencies": {
