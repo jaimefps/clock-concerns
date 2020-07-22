@@ -1,7 +1,7 @@
-const ServoAdapter = require("./adapter");
 const createGrid = require("./create-grid");
+const Adapter = require("./adapter");
 
 module.exports = {
-  ServoAdapter,
-  createGrid,
+  createServoGrid: createGrid,
+  ServoAdapter: Adapter,
 };

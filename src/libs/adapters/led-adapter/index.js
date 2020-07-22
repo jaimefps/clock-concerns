@@ -1,7 +1,7 @@
 const createGrid = require("./create-grid");
-const LedAdapter = require("./adapter");
+const Adapter = require("./adapter");
 
 module.exports = {
-  LedAdapter,
-  createGrid,
+  createLedGrid: createGrid,
+  LedAdapter: Adapter,
 };

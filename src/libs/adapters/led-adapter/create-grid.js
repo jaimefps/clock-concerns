@@ -5,25 +5,19 @@
 const { Led } = require("johnny-five");
 
 const COMMONS = {
-  enabling: {
-    method: "on",
-    params: [],
-  },
-  disabling: {
-    method: "off",
-    params: [],
-  },
+  enabling: { method: "on", params: [] },
+  disabling: { method: "off", params: [] },
 };
 
 const createGrid = () => ({
   5: {
-    a: { ...COMMONS, servo: new Led(2) },
-    b: { ...COMMONS, servo: new Led(3) },
-    c: { ...COMMONS, servo: new Led(4) },
-    d: { ...COMMONS, servo: new Led(5) },
-    e: { ...COMMONS, servo: new Led(6) },
-    f: { ...COMMONS, servo: new Led(7) },
-    g: { ...COMMONS, servo: new Led(8) },
+    a: { ...COMMONS, node: new Led(2) },
+    b: { ...COMMONS, node: new Led(3) },
+    c: { ...COMMONS, node: new Led(4) },
+    d: { ...COMMONS, node: new Led(5) },
+    e: { ...COMMONS, node: new Led(6) },
+    f: { ...COMMONS, node: new Led(7) },
+    g: { ...COMMONS, node: new Led(8) },
   },
 });
 

@@ -2,17 +2,7 @@
 
 ## Description
 
-A small repo for working through musings on "separation of concerns". The intent is to see how much code can be reused across different execution environments for a Javascript Clock program.
-
-## Helpful Documentation
-
-| Dependency                 | Docs                                                                  |
-| -------------------------- | --------------------------------------------------------------------- |
-| johnny-five                | http://johnny-five.io/api/                                            |
-| johnny-five board          | https://github.com/rwaldron/johnny-five/blob/                         |
-| johnny-five servo (single) | https://github.com/rwaldron/johnny-five/                              |
-| johnny-five servo (array)  | https://github.com/rwaldron/johnny-five/blob/master/lib/servo.js#L541 |
-| universal-transition       | https://www.npmjs.com/package/universal-transition                    |
+A small repo for working through musings on "separation of concerns" and OOP with Compositional pattern. The intent is to see how much code can be reused across different execution environments for a Javascript Clock program.
 
 ## Required to operate
 
@@ -21,7 +11,7 @@ A small repo for working through musings on "separation of concerns". The intent
 #### IMPORTANT
 
 Change your Node.js version before running `npm install`.
-Executions may break of if you change Node.js version after installing dependencies.
+Executions may break if you change Node.js version after installing dependencies.
 
 ## Setup Web Clock
 
@@ -52,8 +42,7 @@ Executions may break of if you change Node.js version after installing dependenc
 
 #### IMPORTANT
 
-You may see a long list of WARN and ERR logs when the `Building` stage begins. Wait about a minute before killing the process. Many of these errors can be ignored. There seem to be missing some unused dependencies regarding `@serialport/bindings`.
-
+When the `Building project` step begins. Wait about a minute before killing the process, you may see a long list of `WARN` and `ERR!` logs. Many of these errors can be ignored. There seem to be missing some unused dependencies regarding `@serialport/bindings`.
 ![alt text](assets/readme/ignore-error-log.png)
 
 ## TODO
