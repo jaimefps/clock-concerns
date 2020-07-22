@@ -4,11 +4,11 @@
  */
 const { Servo } = require("johnny-five");
 
-const CHANGE_RATE_PARAMS = [200, 50];
+const CHANGE_RATE_PARAMS = [1000, 50];
 
 const DEGREE_90 = {
   method: "center",
-  params: [],
+  params: CHANGE_RATE_PARAMS,
 };
 
 const DEGREE_0 = {
@@ -22,26 +22,67 @@ const DEGREE_180 = {
 };
 
 const orientation = {
-  a: {},
-  b: {},
-  c: {},
-  d: {
-    enabling: DEGREE_0,
-    disabling: DEGREE_90,
+  a: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_0,
   },
-  e: {},
-  f: {},
-  g: {},
+  b: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_0,
+  },
+  c: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_180,
+  },
+  d: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_180,
+  },
+  e: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_0,
+  },
+  f: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_180,
+  },
+  g: {
+    enabling: DEGREE_90,
+    disabling: DEGREE_180,
+  },
 };
 
-const createGridArduino = () => ({
+const createGrid = () => ({
   5: {
+    a: {
+      ...orientation.a,
+      servo: new Servo({ pin: 2 }),
+    },
+    b: {
+      ...orientation.b,
+      servo: new Servo({ pin: 3 }),
+    },
+    c: {
+      ...orientation.c,
+      servo: new Servo({ pin: 4 }),
+    },
     d: {
       ...orientation.d,
-      // this needs to be abstracted for Arduino vs Tessel:
-      servo: new Servo({ port: "A", pin: 5 }),
+      servo: new Servo({ pin: 5 }),
+    },
+    e: {
+      ...orientation.e,
+      servo: new Servo({ pin: 6 }),
+    },
+    f: {
+      ...orientation.f,
+      servo: new Servo({ pin: 7 }),
+    },
+    g: {
+      ...orientation.g,
+      servo: new Servo({ pin: 8 }),
     },
   },
 });
 
-module.exports = createGridArduino;
+module.exports = createGrid;
