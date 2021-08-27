@@ -1,5 +1,7 @@
 # Clock
 
+![alt text](ezgif.com-gif-maker.gif)
+
 ## Description
 
 A small repo for working through musings on "separation of concerns" and OOP with Compositional pattern. The intent is to see how much code can be reused across different execution environments for a Javascript Clock program.
